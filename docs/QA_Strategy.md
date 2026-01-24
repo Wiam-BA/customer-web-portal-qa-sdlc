@@ -105,7 +105,7 @@ High-risk areas are tested **earlier, deeper, and more frequently**, including a
 
 ### Tools
 - Playwright for E2E automation
-- JavaScript or Python as test language
+- JavaScript as the primary test language
 - GitHub Actions for CI execution
 
 Automation is **selective and risk-based**, not exhaustive.
