@@ -1,4 +1,4 @@
-# Product Overview – Customer Web Portal
+# Product Overview: Customer Web Portal
 
 ## 1. Product Purpose
 The Customer Web Portal is a web-based application that allows end users to browse and purchase digital products.  
