@@ -161,18 +161,21 @@ Test data is assumed to be stable and reusable.
 - Defect severity distribution
 - Automation coverage (critical flows)
 
+These metrics are used to assess overall product quality, identify risk areas, and support release decision-making. 
 Test results are summarized in **test reports** stored in the `/reports` folder.
 
 ---
 
 ## 11. Release & QA Sign-Off
 
-QA sign-off is granted when:
-- All critical tests pass
-- Known issues are documented and accepted
-- Product risk is deemed acceptable
+QA sign-off is granted based on a risk-based assessment when:
 
-Final approval is documented in `Release_Signoff.md`.
+- All critical test scenarios pass successfully
+- No open critical or blocking defects remain
+- Known issues are documented and formally accepted
+- Overall product risk is considered acceptable for release
+
+Final approval and release readiness are documented in `Release_Signoff.md`.
 
 ---
 
