@@ -132,9 +132,10 @@ Test data is assumed to be stable and reusable.
 
 ### Exit Criteria
 - No open critical or blocking defects
-- High-risk test scenarios executed successfully
-- Regression tests passed
-- QA approval granted
+- All high-risk test scenarios executed successfully
+- Regression test pass rate meets acceptable quality threshold
+- Remaining medium or low severity defects are documented and accepted
+- QA approval granted based on overall risk assessment
 
 ---
 
