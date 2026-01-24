@@ -141,11 +141,15 @@ Test data is assumed to be stable and reusable.
 
 ## 9. Defect Management
 
-- Defects are logged with:
+- Defects are logged in a centralized tracking tool (e.g. Jira)
+- Each defect includes:
   - Clear reproduction steps
-  - Expected vs actual result
+  - Expected vs actual results
   - Severity and priority
-- Defects are tracked until resolution or formal acceptance
+  - Supporting evidence (screenshots, logs, videos when applicable)
+- Defects are reviewed and triaged regularly
+- Resolution status is tracked until closure or formal acceptance
+- Known issues are documented and assessed as part of release decisions
 
 ---
 
