@@ -25,10 +25,10 @@ customer-web-portal-qa-sdlc/
 ├── .gitignore
 ├── docs/
 │   ├── Product_Overview.md
+│   ├── User_Stories.md
 │   ├── QA_Strategy.md
 │   ├── Test_Plan.md
 │   ├── Risk_Analysis.md
-│   ├── User_Stories.md
 │   └── Release_Signoff.md
 ├── test-cases/
 │   ├── Manual_Test_Cases.xlsx
