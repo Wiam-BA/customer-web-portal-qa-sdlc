@@ -81,6 +81,37 @@ customer-web-portal-qa-sdlc/
 - **Manual Test Cases**: Excel (`.xlsx`)  
 
 ---
+## Test Automation (Playwright) + CI
+
+This repository includes a small but **production-style** E2E automation setup using **Playwright (JavaScript)**.  
+Automation is demonstrated against the public demo e-commerce app **SauceDemo** (used for portfolio purposes).
+
+### What is automated (Smoke / P0)
+- Login (valid user)
+- Add one product to cart
+- Cart verification (item visible)
+
+### Local execution
+From the Playwright folder:
+
+```bash
+cd automation/playwright
+npm install
+npx playwright install
+npm run test:smoke
+```
+
+### CI execution (GitHub Actions)
+Smoke tests run automatically on:
+- Push to `main`
+- Pull requests to `main`
+
+The workflow uploads the **Playwright HTML report** as a downloadable artifact.
+
+### Test evidence
+- **HTML report** is generated per run (`playwright-report/`)
+- **Failure evidence** (screenshots/traces) is generated per run (`test-results/`)
+- Reports/evidence are **not committed** to Git; they are generated on each run and stored as CI artifacts.
 
 ## License
 
