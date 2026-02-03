@@ -101,7 +101,37 @@ Automation focused on **critical user journeys**, including:
 - No blocking automation failures detected
 
 ---
+### 6.3 Test Evidence (CI Artifacts)
 
+Automation evidence is generated and stored per CI run using GitHub Actions artifacts.
+
+### Where to find the CI run
+1. Open the repository on GitHub
+2. Go to **Actions**
+3. Open the latest workflow run: **Playwright Smoke (SauceDemo)**
+
+### Download the HTML report
+1. Inside the workflow run page, scroll to **Artifacts**
+2. Download: **playwright-report** (ZIP)
+3. Extract it locally
+4. Open: `index.html` (inside the extracted folder)
+
+### Failure evidence (when tests fail)
+If a test fails, Playwright generates evidence in `test-results/` (screenshots/traces/videos depending on configuration).
+In CI, this is uploaded as the artifact:
+- **playwright-test-results**
+
+To use it:
+1. Download **playwright-test-results**
+2. Extract the ZIP
+3. Review screenshots/videos
+4. Open traces via:
+   ```bash
+   npx playwright show-trace <path-to-trace.zip>
+   ```
+
+> Note: `playwright-report/` and `test-results/` are generated artifacts and are intentionally not committed to the repository.
+---
 ## 7. Risk Assessment Update
 Based on test execution:
 - High-risk areas (authentication, checkout, access control) were **successfully validated**
