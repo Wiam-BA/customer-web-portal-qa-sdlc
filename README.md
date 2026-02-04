@@ -74,7 +74,7 @@ customer-web-portal-qa-sdlc/
 
 ## Technologies & Tools Used
 
-- **Testing / Automation**: Playwright, Python / JavaScript  
+- **Testing / Automation**: Playwright, JavaScript  
 - **Version Control**: Git + GitHub  
 - **CI/CD**: GitHub Actions  
 - **Documentation**: Markdown (`.md`) for all QA documents  
